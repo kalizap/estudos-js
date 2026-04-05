@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box; 
+      }
+      body
+      {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #abbdf2;
+      }
+      h1{
+        background-color: #132c77;
+        color: #ffffff;
+        padding: 10px;
+        font-size: 1.5rem;
+      }
+      .lugares {
+        display: grid;
+        gap: 20px;
+        padding: 20px;
+        grid-template-columns: 1fr
+      }
+      .card {
+        border: solid 2px #4169e1;
+        border-radius: 10px;
+        padding: 20px;
+        background-color: #ffffff;
+        text-align: left;
+        gap: 20px;
+      }
+      .card h3{ 
+        margin-top: 10px;
+      }
+      .card p{
+        padding: 20px;
+      }
+      .fakeimg /*trocar dps*/{
+        background-color: blueviolet;
+        width: 100%;
+        padding: 20px;
+      }
+      @media (min-width: 768px)/*Desktop*/ {
+    .lugares {
+        grid-template-columns: repeat(3, 1fr); 
+    }
+    h1{
+        font-size: 2.5rem;
+    }
+    .card p{
+        font-size: 1rem;
+    }
+}
+    </style>
+  </head>
+  <body>
+    <h1>Melhores lugares do Sol Nascente para visitar!</h1>
+    <div class="lugares">
+      <div class="card"><div class="fakeimg">imagem 1</div>
+    <h3>
+        Gela-guela
+    </h3>
+<p>lugar massa</p></div>
+      <div class="card"><div class="fakeimg">imagem 2</div></div>
+      <div class="card"><div class="fakeimg">imagem 3</div></div>
+      <div class="card"><div class="fakeimg">imagem 4</div></div>
+      <div class="card"><div class="fakeimg">imagem 5</div></div>
+      <div class="card"><div class="fakeimg">imagem 6</div></div>
+
+    </div>
+  </body>
+</html>
